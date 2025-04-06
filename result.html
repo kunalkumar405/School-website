@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results | R.N. Tagore H.S. School</title>
+    <meta name="description" content="Access your academic results securely through the R.N. Tagore Higher Secondary School student portal.">
+    <meta name="robots" content="noindex, nofollow">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        /* Styles for Page Header */
+        .page-header {
+            background: linear-gradient(rgba(26, 75, 140, 0.7), rgba(26, 75, 140, 0.7)), url('https://picsum.photos/1920/400?random=results') no-repeat center center/cover; /* Random Banner */
+            padding: 6rem 0;
+            text-align: center;
+            color: var(--white);
+            margin-top: 8rem; /* Adjust based on fixed header height */
+        }
+        .page-header h1 {
+            font-size: clamp(3.5rem, 6vw, 5rem); margin-bottom: 1rem; color: var(--white);
+        }
+        .page-header p {
+            font-size: 1.8rem; max-width: 70rem; margin: 0 auto; color: rgba(255, 255, 255, 0.9);
+        }
+
+        /* Login Form Styles */
+        .results-login-container {
+            max-width: 50rem; /* Limit width of login box */
+            margin: 4rem auto 0;
+            background-color: var(--white);
+            padding: 3rem 4rem;
+            border-radius: var(--border-radius-lg);
+            box-shadow: var(--box-shadow);
+        }
+        .results-login-container h2 {
+            text-align: center;
+            color: var(--primary-blue);
+            margin-bottom: 2.5rem;
+            font-size: 2.4rem;
+        }
+         .results-login-container h2::after { display: none; } /* Remove global underline */
+
+        .results-login-form .form-group {
+             margin-bottom: 2rem;
+        }
+        .results-login-form label {
+            display: block;
+            margin-bottom: 0.8rem; /* Slightly more space */
+            font-weight: 600;
+            font-size: 1.5rem;
+            color: var(--dark-gray);
+        }
+        .results-login-form input[type="text"],
+        .results-login-form input[type="password"],
+        .results-login-form input[type="date"] { /* Style date input similarly */
+            width: 100%;
+            padding: 1.2rem 1.5rem; /* Adjust padding */
+            border: 1px solid #ccc; /* Slightly different border */
+            border-radius: var(--border-radius);
+            font-size: 1.6rem;
+            font-family: inherit;
+        }
+        .results-login-form input:focus {
+             border-color: var(--secondary-blue);
+             box-shadow: 0 0 0 2px rgba(58, 123, 213, 0.2);
+             outline: none;
+        }
+
+        .results-login-form button { /* Uses .btn styles */
+             width: 100%; /* Full width login button */
+             margin-top: 1rem; /* Space above button */
+             padding: 1.5rem; /* Larger button */
+        }
+
+        .result-notes {
+            margin-top: 4rem;
+            text-align: center;
+            font-size: 1.5rem;
+            color: #555;
+            border-top: 1px solid var(--light-gray);
+            padding-top: 2rem;
+        }
+        .result-notes p {
+            margin-bottom: 1rem;
+        }
+
+         /* Responsive adjustments */
+         @media (max-width: 768px) {
+             .page-header { margin-top: 7rem; padding: 4rem 0; }
+             .results-login-container { padding: 2.5rem 3rem; margin-top: 3rem;}
+         }
+         @media (max-width: 576px) {
+             .results-login-container { padding: 2rem 1.5rem; max-width: 95%;}
+             .results-login-form label { font-size: 1.4rem; }
+         }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-inner">
+            <a href="school.html" class="logo" aria-label="R.N. Tagore H.S. School Homepage">
+                <img src="https://media-hosting.imagekit.io/09320f4d0ad84f25/rn%20tagore%20logo%202.o.png?Expires=1838483430&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=PdGQ1ljtS~a8gpczWKoe9NfKau2eJxP-pzIYO2veq6HGLycqNCPnJjX7n~dYt48BVP34l~kLGS8Hiwzvc75WG-xUyjmW~iCWuvsxVRlITjQirRdiyTeIazn91RwL0tDwMdJ85hxP37gp5d4k2hbjB7IjwJ5Gklgm32tkHiqCxt~4po4s6OlWfRWVdrxSJXkMOaGsi2ulh41KT-ZPPyGVP81lajEutHXlO1OrQeocvDp0nhQnGd-0Yb1peyDDt8SsJUtRY586mYPolBp7jvMSILv2ybMi6dJbvH6WIFO8zEtzDLrSscvsVejXSAGrm~9~EwzW7-EEn-YAmuCwFstZLg__" alt="R.N. Tagore H.S. School Logo">
+                <div class="logo-text">
+                    <h1>R.N. Tagore H.S. School</h1>
+                    <p>A Quality School For Better Tomorrow</p>
+                </div>
+            </a>
+            <nav aria-label="Main Navigation">
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle Menu" aria-expanded="false" aria-controls="nav-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav-menu" role="menu">
+                    <li role="none"><a href="Index.html" role="menuitem">Home</a></li>
+                    <li role="none"><a href="about.html" role="menuitem">About</a></li>
+                    <li role="none"><a href="notices.html" role="menuitem">Notices</a></li>
+                    <li role="none"><a href="gallery.html" role="menuitem">Gallery</a></li>
+                    <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                    <li role="none"><a href="results.html" role="menuitem" aria-current="page">Results</a></li> <li role="none" class="nav-btn-li"><a href="admission.html" class="btn nav-btn" role="menuitem">Admissions</a></li>
+                    <li role="none" class="mobile-nav-btn" style="display: none;"><a href="admission.html" class="btn" role="menuitem">Admissions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Check Your Results</h1>
+            <p>Please enter your credentials to view your academic results securely.</p>
+        </div>
+    </section>
+
+    <main>
+        <section class="section" id="results-portal">
+            <div class="container">
+                <div class="results-login-container">
+                    <h2>Student Result Portal</h2>
+                     <form class="results-login-form" id="resultsLoginForm" action="/your-backend-result-checker-url" method="POST">
+                        <div class="form-group">
+                            <label for="studentId">Student ID / Roll Number</label>
+                            <input type="text" id="studentId" name="student_id" placeholder="Enter your ID or Roll Number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="studentDob">Date of Birth</label>
+                            <input type="date" id="studentDob" name="dob" required>
+                            </div>
+                         <div class="form-group">
+                            <label for="examSession">Select Examination/Session</label>
+                            <select id="examSession" name="session" required style="width: 100%; padding: 1.2rem 1.5rem; border: 1px solid #ccc; border-radius: var(--border-radius); font-size: 1.6rem; background-color: white;">
+                                <option value="">-- Select Exam --</option>
+                                <option value="term1_2025">Term 1 Exam - 2025</option>
+                                <option value="annual_2024">Annual Exam - 2024</option>
+                                </select>
+                        </div>
+                        <button type="submit" class="btn">View Result</button>
+                    </form>
+                </div> <div class="result-notes">
+                     <p>Results for the latest Term End Examination have been declared.</p>
+                     <p>In case of any discrepancy, please contact the school office within 7 working days.</p>
+                     </div>
+
+            </div> </section> </main> <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>R.N. Tagore Higher Secondary School is committed to providing quality education that empowers students to become responsible global citizens.</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Twitter profile"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram profile"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul id="nav-menu" role="menu">
+                        <li role="none"><a href="school.html" role="menuitem">Home</a></li>
+                        <li role="none"><a href="About.html" role="menuitem">About</a></li>
+                        <li role="none"><a href="Notic.html" role="menuitem">Notices</a></li>
+                        <li role="none"><a href="Gallery.html" role="menuitem">Gallery</a></li>
+                        <li role="none"><a href="contact.html" role="menuitem">Contact</a></li>
+                        <li role="none" class="nav-btn-li"><a href="Admission .html" class="btn nav-btn" role="menuitem">Admissions</a></li>
+                        <li role="none" class="mobile-nav-btn" style="display: none;"><a href="Admission .html" class="btn" role="menuitem">Admissions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Academics</h3>
+                     <ul>
+                        <li><a href="#">Curriculum</a></li>
+                        <li><a href="#">Facilities</a></li>
+                        <li><a href="#">Faculty</a></li>
+                        <li><a href="#">School Calendar</a></li>
+                        <li><a href="#">Results</a></li> </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact Info</h3>
+                    <address>
+                        <ul>
+                           <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 123 School Lane, Cityville</li>
+                            <li><i class="fas fa-phone-alt" aria-hidden="true"></i> <a href="tel:+911234567890">+91 12345 67890</a></li>
+                            <li><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:info@rntagore-example.com">info@rntagore-example.com</a></li>
+                        </ul>
+                    </address>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© <span id="current-year">2025</span> R.N. Tagore Higher Secondary School. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Ensure copyright year is updated
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        // Add any JS needed for form validation (client-side only)
+    </script>
+
+</body>
+</html>
